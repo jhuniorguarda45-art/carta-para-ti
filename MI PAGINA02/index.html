@@ -1,0 +1,319 @@
+<html>
+<head>
+    <title>
+        Mis Productos
+    </title>
+    <style>
+ .grid-productos { 
+    display: flex;
+ }
+
+body{
+    
+    margin:0;
+    font-family: 'arial', Times, serif;
+    background:#f5f7fb;
+}
+
+nav{
+
+    background-color: #180733;
+    padding: 10px 0;
+}
+
+nav ul{
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+}
+
+nav ul li{
+
+  margin: 0 20px;  
+}
+nav ul li a{
+color: rgb(133, 5, 5);
+text-decoration: none;
+font-size: 18px;
+padding: 8px 12px;
+transition: 0.3s;
+}
+nav ul li a:hover{
+background-color: rgb(10, 158, 216);
+border-radius: 10px;
+
+}
+
+.slider{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position:relative;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+.slides img{
+
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+}
+@keyframes slide{
+
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+     100%{margin-left: -200%;}
+
+}
+.texto{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+
+.seccion-productos{
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.titulo-productos{
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    color: #91711b;
+    margin-bottom: 10px;
+
+}
+
+.subtitulo{
+text-align: center;
+color:#666;
+ margin-bottom: 50px;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px
+}
+
+.card-producto{
+
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgb(0, 0, 0,0.1);
+    transition: 0.3s;
+}
+.card-producto:hover{
+transform: translateY(-8px);
+ box-shadow: 0 15px 30px rgb(0, 0, 0,0.2);
+}
+.card-producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.contenido{
+    padding: 20px;
+}
+.contenido h3{
+    margin: 0;
+    color: #333;
+}
+.contenido p{
+color: #777;
+font-size: 14px;
+margin: 10px 0;
+}
+.boton{
+    display: inline-block;
+    background: #41230b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.boton:hover{
+    background: #530404;
+}
+
+.footer{
+    background-color: #0d0d0e;
+    color: thistle;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin:auto;
+    padding:20px;
+}
+.footer-box{
+    flex:1;
+    min-width: 200px;
+    margin:10px;
+}
+
+.footer-box h2{
+    color: rgb(19, 72, 151);
+}
+.footer-box h3{
+    margin-bottom: 15px;
+    color: rgb(19, 72, 151);
+}
+.footer-box p{
+    line-height: 1.6;
+    font-size: 14px;
+}
+.footer-box ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-box ul li{
+    margin: 12px 0;
+}
+.footer-box ul li a{
+    text-decoration: none;
+    color: #f5f7fb;
+    transition: 0.3s;
+}
+.footer-box ul li a:hover{
+    color: #831612;
+    padding-left: 5px;
+}
+.footer-buttom{
+    text-align: center;
+    border-top: 1px solid #333;
+    padding:15px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body>
+<nav>
+<ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Tienda</a></li>
+     <li><a href="#">Productos</a></li>
+    <li><a href="#">Rastreo de productos</a></li>
+</ul>
+
+</nav>
+
+<div class="slider">
+<div class="slides">
+<img src="img/FOTO1.png">
+<img src="img/FOTO2.png">
+<img src="img/FOTO3.png">
+
+</div>
+
+<div class="texto">
+    TE GUSTAN LOS PECES
+</div>
+
+</div>
+
+
+<section class="seccion-productos">
+<h2 class ="titulo-productos">Nuestros Productos</h2>
+<p class="subtitulo">Soluciones Tecnologcias para tu negocio</p>
+<div class="grid-productos">
+<div class="card-producto">
+<img src="img/FOTO4.jpg">
+<div class="contenido">
+<h3> Sistema WEB</h3>
+<p>Desarrollo de sistemas web profesional para empresas</p>
+<a href="#" class="boton">Ver mas</a>
+</div>
+</div>
+<div class="card-producto">
+    <img src="img/FOTO5.jpg">
+    <div class="contenido">
+        <h3>Sistema WEB</h3>
+        <p>Desarrollo de sistemas web profesional para empresas</p>
+        <a href="#" class="boton">Ver mas</a>
+    </div>
+</div>
+
+<div class="card-producto">
+    <img src="img/FOTO6.jpg">
+    <div class="contenido">
+        <h3>Sistema WEB</h3>
+        <p>Desarrollo de sistemas web profesional para empresas</p>
+        <a href="#" class="boton">Ver mas</a>
+    </div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-container">
+
+    <!--Seccion 1-->
+   
+<div class="footer-box">
+    <h2>Pez Beta.com</h2>
+    <p>
+      Portal dedicado a uno de los peces más hermosos del mundo de la acuariofilia de agua dulce.​ El pez luchador de Siam o pez Betta.
+    </p>
+
+    </div>
+     <!--Seccion 2-->
+    <div class="footer-box">
+    <h3>Menu</h3>
+<ul>
+    <li><a href="#">Informacion del Pez Beta</a></li>
+    <li><a href="#">colores del Pez Beta</a></li>
+    <li><a href="#">tipo de pez beta</a></li>
+    <li><a href="#">Enfermedades mas comunes</a></li>
+
+<li><a href="#">blog</a></li>
+</ul>
+</div>
+<!--Seccion 3-->
+<div class="footer-box">
+    <h3>Informacion de contacto</h3>
+    <ul>
+    <li><a href="aviso legal">Aviso Legal</a></li>
+    <li><a href="politica de privacidad">Politica de Privacidad</a></li>
+    
+
+    </ul>
+ </div>
+
+</div>
+<!--Seccion Parte inferior-->
+<div class="footer-buttom">
+   <p>© Copyright 2026 | Diseño web: Masideas.es</p> 
+</div>
+</div>
+</footer>
+
+</body>
+
+</html>
